@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "excel-word"
+version = "0.1.0"
+description = ""
+authors = ["Your Name <you@example.com>"]
+readme = "README.md"
+packages = [{include = "excel_word"}]
+
+[tool.poetry.dependencies]
+python = "^3.7"
+openpyxl = "^3.1.2"
+python-docx = "^0.8.11"
+
+[tool.poetry.scripts]
+excel-bd = "excel_word.scripts.bd:main"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
